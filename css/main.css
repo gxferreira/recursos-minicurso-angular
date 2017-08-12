@@ -72,3 +72,48 @@ small, .font_small {font-size: 0.75em;}
   font-weight: bold;
   font-size: 1.5em;
  }
+
+.team-stats-menu{
+  margin-right: 0;
+ }
+
+ .team-stats-menu.navbar-nav>li>a{
+    color: white;
+    font-size: 1em;
+    background-color: #232954;
+    margin: 0.2em 0.3em 0;
+    border: 1px solid #888;
+ }
+
+ .team-stats-menu.navbar-nav>li>a:hover{
+    background-color: #232954;
+    color: white;
+    margin-top: 0;
+ }
+
+.team-stats-menu.navbar-nav>li>a:hover{
+  border: 0.2em solid #0af10a; 
+  margin-top: 0.1em;
+}
+
+.team-list-container{
+  overflow-y: auto;
+}
+
+.component-title-container{
+  border: 1px solid white;
+  text-align: center;
+  margin-bottom: 1.5em;
+}
+
+.component-title-container h2{
+  margin: 0.3em;
+}
+ 
+
+ @media (min-width: 768px){
+  .team-stats-menu.navbar-nav>li>a {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+ }
