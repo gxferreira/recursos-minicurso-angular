@@ -1,0 +1,47 @@
+<table class="table table-bordered">
+	<thead>
+		<tr>
+			<th></th>
+			<th>Time</th>
+			<th>Pts</th>
+			<th>Jog</th>
+			<th>Vit</th>
+			<th>Emp</th>
+			<th>Der</th>
+			<th>GPr</th>
+			<th>GCt</th>
+			<th>SdG</th>
+			<th>%</th>
+			<th></th>
+		</tr>
+	</thead>
+	<tbody ng-repeat="posicao in viewData.classificacao">
+		<tr>
+			<td>{{ posicao.position }}º</td>
+			<td>
+				<img ng-src="{{ posicao.time.escudos.grande }}">
+				{{ posicao.time.nome }}
+			</td>
+			<td>{{ posicao.points }}</td>
+			<td>{{ posicao.playedGames }}</td>
+			<td>{{ posicao.wins }}</td>
+			<td>{{ posicao.draws }}</td>
+			<td>{{ posicao.losses }}</td>
+			<td>{{ posicao.goals }}</td>
+			<td>{{ posicao.goalsAgainst }}</td>
+			<td>{{ posicao.goalDifference }}</td>
+			<td>
+				{{ ((posicao.points) * 100)/(posicao.playedGames*3) | number:2 }}
+			</td>
+			<td class="text-center">
+				<button class="btn btn-warning"
+					ng-click="classificacaoController.actionButtonInfo(posicao)">Info</button>
+			</td>
+		</tr>
+		<tr ng-show="viewData.posicoesDetalhada[posicao.id]">
+			<td colspan="12">
+				<div info-rendimento posicao="posicao"></div>
+			</td>
+		</tr>
+	</tbody>
+</table>

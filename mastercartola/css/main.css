@@ -1,0 +1,119 @@
+html {font-size: 1em;}
+
+body {
+  background-color: #232d75;
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 400;
+  line-height: 1.45;
+  color: white;
+}
+
+p {margin-bottom: 1.3em;}
+
+h1, h2, h3, h4 {
+  margin: 1.414em 0 0.5em;
+  font-weight: inherit;
+  line-height: 1.2;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 3.157em;
+}
+
+h2 {font-size: 2.369em;}
+
+h3 {font-size: 1.777em;}
+
+h4 {font-size: 1.333em;}
+
+small, .font_small {font-size: 0.75em;}
+
+/**
+ * TEAM STATS STRUCTURE
+ */
+.navbar-team-stats{
+  background-color: #434fa2;
+  border: 5px solid; 
+  border-color: #4e4dd9 #4e4dd9 #111054 #111054;
+  margin: 20px;
+}
+
+.navbar-team-stats h1{
+  margin: 0.2em;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.borderless td, .borderless th {
+    border: none;
+}
+
+.table.borderless>tbody>tr>td,
+ .table.borderless>tbody>tr>th,
+ .table.borderless>tfoot>tr>td,
+ .table.borderless>tfoot>tr>th,
+ .table.borderless>thead>tr>td,
+ .table.borderless>thead>tr>th{
+ border: none; 
+
+}
+
+.escudo-time{
+  margin-right: 10px; 
+}
+
+.table-striped.team-list>tbody>tr:nth-child(odd)>td, 
+.table-striped.team-list>tbody>tr:nth-child(odd)>th {
+   background-color: #303a82;
+ }
+
+ .team-column{
+  font-weight: bold;
+  font-size: 1.5em;
+ }
+
+.team-stats-menu{
+  margin-right: 0;
+ }
+
+ .team-stats-menu.navbar-nav>li>a{
+    color: white;
+    font-size: 1em;
+    background-color: #232954;
+    margin: 0.2em 0.3em 0;
+    border: 1px solid #888;
+ }
+
+ .team-stats-menu.navbar-nav>li>a:hover{
+    background-color: #232954;
+    color: white;
+    margin-top: 0;
+ }
+
+.team-stats-menu.navbar-nav>li>a:hover{
+  border: 0.2em solid #0af10a; 
+  margin-top: 0.1em;
+}
+
+.team-list-container{
+  overflow-y: auto;
+}
+
+.component-title-container{
+  border: 1px solid white;
+  text-align: center;
+  margin-bottom: 1.5em;
+}
+
+.component-title-container h2{
+  margin: 0.3em;
+}
+ 
+
+ @media (min-width: 768px){
+  .team-stats-menu.navbar-nav>li>a {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+ }

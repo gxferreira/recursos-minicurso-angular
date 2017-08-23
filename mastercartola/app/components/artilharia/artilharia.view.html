@@ -1,0 +1,15 @@
+<h2>Artilharia</h2>
+<table class="table table-bordered">
+	<thead>
+		<tr>
+			<th>Nome</th>
+			<th>Goals</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr ng-repeat = "a in viewData.artilheiros | orderBy:'-gols'">
+			<td><img ng-src="{{a.time}}" />{{a.nome}}</td>
+			<td>{{a.gols}}</td>
+		</tr>
+	</tbody>
+</table>

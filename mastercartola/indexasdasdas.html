@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html ng-app>
+<head>
+	<title></title>
+	<script src="node_modules/angular/angular.min.js">
+	</script>
+</head>
+<body ng-init="msg = 'Hello Word'">
+	<h1>{{ msg }}</h1>
+
+	<input type="text" name="text" ng-model="texto">
+	<p>{{ texto }}</p>
+	Index? <input type="checkbox" ng-model="showIndex">
+
+	<div ng-init="jogadores = [
+		{'nome':'R. Gaucho', 'time': 'Barcelona'},
+		{'nome':'Hernanes', 'time':'São Paulo'},
+		{'nome':'Diego', 'time':'Flamengo'},
+		{'nome':'Jo', 'time':'Corinthians'}
+	]">
+		<table>
+			<tr>
+				<td ng-if="showIndex">Indice</td>
+				<td>Nome</td>
+				<td>Time</td>
+			</tr>
+			<tr ng-repeat="j in jogadores | filter: {'nome':texto}">
+				<td ng-if="showIndex">{{ $index }}</td>
+				<td>{{ j.nome }}</td>
+				<td>{{ j.time }}</td>
+			</tr>
+		</table>
+	</div>
+</body>
+</html>
