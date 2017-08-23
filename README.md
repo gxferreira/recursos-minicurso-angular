@@ -1,4 +1,5 @@
 # Recursos do Mini-curso de Angular
+O projeto completo desenvolvido durante o minicurso se encontra no diretório **mastercartola/** do repositório
 
 ## Comandos para iniciar projeto
 
@@ -31,5 +32,5 @@ sudo npm install --save angular-route
 http-server
 ```
 
-## Link para apresentação
+## Apresentação utilizada no minicurso
 A apresentação está no repositório com o nome **apresentacao-minicurso.pdf**
