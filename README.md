@@ -32,4 +32,4 @@ http-server
 ```
 
 ## Link para apresentação
-
+A apresentação está no repositório com o nome **apresentacao-minicurso.pdf**
