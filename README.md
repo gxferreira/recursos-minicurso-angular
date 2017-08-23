@@ -1,5 +1,4 @@
-# recursos_angular
-Recursos do Mini-curso de Angular
+# Recursos do Mini-curso de Angular
 
 ## Comandos para iniciar projeto
 
